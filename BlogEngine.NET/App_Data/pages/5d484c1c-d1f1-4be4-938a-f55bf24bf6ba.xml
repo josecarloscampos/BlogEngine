@@ -13,8 +13,9 @@ This is an example page.
   <parent>00000000-0000-0000-0000-000000000000</parent>
   <isfrontpage>False</isfrontpage>
   <showinlist>True</showinlist>
-  <ispublished>True</ispublished>
+  <ispublished>False</ispublished>
   <isdeleted>False</isdeleted>
+  <sortorder>0</sortorder>
   <datecreated>2013-12-27 22:12:00</datecreated>
-  <datemodified>2013-12-27 22:03:47</datemodified>
+  <datemodified>2015-12-18 23:25:20</datemodified>
 </page>
