@@ -7,7 +7,7 @@
 <head runat="server">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet" />
+    <link href="main.css" rel="stylesheet" />
     <link href="css/responsive.css" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,12 +28,33 @@
     <form runat="Server">
         <header class="header">
             <div class="navbar navbar-inverse" role="navigation">
+            </div>
+            <div class="title-wrapper">
+                <div class="container">
+                    <img src="<%=Utils.AbsoluteWebRoot %>[CUSTOMFIELD|THEME|Standard|Logo Address|Custom/Themes/Standard/images/logo.png/]" class="pull-left logo" alt="<%=BlogSettings.Instance.Name %>" />
+                    <hgroup class="pull-left">
+                        <h1><a href="<%=Utils.AbsoluteWebRoot %>"><%=BlogSettings.Instance.Name %></a></h1>
+                        <h3><%=BlogSettings.Instance.Description %></h3>
+                    </hgroup>
+                    <div id="social-icons" class="pull-right social-icon">
+                        <a href="http://facebook.com/[CUSTOMFIELD|THEME|Standard|Facebook account|BlogEngine.NET/]">
+                            <img src="~/Custom/Themes/Standard/images/facebook.png" runat="server" />
+                        </a>
+                        <a href="http://twitter.com/[CUSTOMFIELD|THEME|Standard|Twitter account|blogenginenet/]">
+                            <img src="~/Custom/Themes/Standard/images/twitter.png" runat="server" />
+                        </a>
+                        <a href="https://plus.google.com/[CUSTOMFIELD|THEME|Standard|Google plus|u/0/]">
+                            <img src="~/Custom/Themes/Standard/images/googleplus.png" runat="server" />
+                        </a>
+                        <a href="<%=Utils.FeedUrl %>">
+                            <img src="~/Custom/Themes/Standard/images/rss.png" runat="server" />
+                        </a>
+                    </div>
+                </div>
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
                     </div>
@@ -42,6 +63,8 @@
                             <li><a href="<%=Utils.AbsoluteWebRoot %>"><%=Resources.labels.home %></a></li>
                             <li><a href="<%=Utils.AbsoluteWebRoot %>archive<%= BlogEngine.Core.BlogConfig.FileExtension %>"><%=Resources.labels.archive %></a></li>
                             <li><a href="<%=Utils.AbsoluteWebRoot %>contact<%= BlogEngine.Core.BlogConfig.FileExtension %>"><%=Resources.labels.contact %></a></li>
+                            <li><a href="<%=Utils.AbsoluteWebRoot %>catalogo<%= BlogEngine.Core.BlogConfig.FileExtension %>"<%=Resources.labels.catalogo %></a></li>
+                            <li><a href="<%=Utils.AbsoluteWebRoot %>office365<%= BlogEngine.Core.BlogConfig.FileExtension %>"<%=Resources.labels.office355 %></a></li>
                             <%foreach (BlogEngine.Core.Page parentPage in BlogEngine.Core.Page.Pages.Where(p => !p.HasParentPage && p.IsPublished && p.ShowInList).OrderBy(p => p.SortOrder))
                               { %>
                             <li class="page-menu clearfix">
@@ -67,29 +90,6 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a runat="server" id="aLogin"></a></li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="title-wrapper">
-                <div class="container">
-                    <img src="<%=Utils.AbsoluteWebRoot %>[CUSTOMFIELD|THEME|Standard|Logo Address|Custom/Themes/Standard/images/logo.png/]" class="pull-left logo" alt="<%=BlogSettings.Instance.Name %>" />
-                    <hgroup class="pull-left">
-                        <h1><a href="<%=Utils.AbsoluteWebRoot %>"><%=BlogSettings.Instance.Name %></a></h1>
-                        <h3><%=BlogSettings.Instance.Description %></h3>
-                    </hgroup>
-                    <div id="social-icons" class="pull-right social-icon">
-                        <a href="http://facebook.com/[CUSTOMFIELD|THEME|Standard|Facebook account|BlogEngine.NET/]">
-                            <img src="~/Custom/Themes/Standard/images/facebook.png" runat="server" />
-                        </a>
-                        <a href="http://twitter.com/[CUSTOMFIELD|THEME|Standard|Twitter account|blogenginenet/]">
-                            <img src="~/Custom/Themes/Standard/images/twitter.png" runat="server" />
-                        </a>
-                        <a href="https://plus.google.com/[CUSTOMFIELD|THEME|Standard|Google plus|u/0/]">
-                            <img src="~/Custom/Themes/Standard/images/googleplus.png" runat="server" />
-                        </a>
-                        <a href="<%=Utils.FeedUrl %>">
-                            <img src="~/Custom/Themes/Standard/images/rss.png" runat="server" />
-                        </a>
                     </div>
                 </div>
             </div>

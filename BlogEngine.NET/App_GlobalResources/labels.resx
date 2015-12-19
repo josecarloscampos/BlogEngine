@@ -2558,4 +2558,10 @@
   <data name="errorMessage" xml:space="preserve">
     <value>Error Message</value>
   </data>
+  <data name="catalogo" xml:space="preserve">
+    <value>Catálogo</value>
+  </data>
+  <data name="office355" xml:space="preserve">
+    <value>Office 365</value>
+  </data>
 </root>
