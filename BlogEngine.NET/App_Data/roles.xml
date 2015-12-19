@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<roles>
+  <role>
+    <name>Administrators</name>
+    <users>
+      <user>Admin</user>
+      <user>Brayan</user>
+    </users>
+  </role>
+  <role>
+    <name>Editors</name>
+    <users />
+  </role>
+  <role>
+    <name>Anonymous</name>
+    <users />
+  </role>
+  <role>
+    <name>estudiante</name>
+    <users />
+  </role>
+</roles>

@@ -23,6 +23,8 @@ namespace App_Code.Controls
             menu.Home = Resources.labels.home;
             menu.Contact = Resources.labels.contact;
             menu.Archive = Resources.labels.archive;
+            menu.Catalogo = Resources.labels.catalogo;
+            menu.office365 = Resources.labels.office355;
             menu.Logon = Resources.labels.login;
             menu.Logoff = Resources.labels.logoff;
 

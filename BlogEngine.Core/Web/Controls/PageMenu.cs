@@ -33,6 +33,11 @@ namespace BlogEngine.Core.Web.Controls
         /// </summary>
         public string Archive { get; set; }
 
+
+        ///Personalizado
+        public string Catalogo { get; set; }
+        public string office365 { get; set; }
+
         /// <summary>
         /// Logon label.
         /// </summary>
@@ -110,6 +115,8 @@ namespace BlogEngine.Core.Web.Controls
 
                 AddMenuItem(ul, Home, Utils.RelativeWebRoot + "default.aspx");
                 AddMenuItem(ul, Archive, Utils.RelativeWebRoot + "archive.aspx");
+                AddMenuItem(ul, Catalogo, Utils.RelativeWebRoot + "catalogo.aspx");
+                AddMenuItem(ul, office365, Utils.RelativeWebRoot + "offic365.aspx");
             }
 
             foreach (BlogEngine.Core.Page page in BlogEngine.Core.Page.Pages)

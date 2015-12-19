@@ -1,5 +1,14 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Custom/Themes/Standard/site.master" AutoEventWireup="true" CodeBehind="catalogo.aspx.cs" Inherits="BlogEngine.NET.catalogo" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="cphBody" runat="server">
-</asp:Content>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Custom/Themes/Standard/site.master" %>
+<%@ Import Namespace="BlogEngine.Core" %>
+<script language="c#" runat="server">
+  protected static string world;
+  protected void Page_Load(object sender, EventArgs e)
+    {
+      world = "world!";
+    }
+</script>
+<asp:content id="Content1" contentplaceholderid="cphBody" runat="Server">
+  <div>
+    Hello <%=world %>
+  </div>
+</asp:content>

@@ -35,8 +35,6 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
                         </button>
                     </div>
                     <div class="navbar-collapse collapse">
@@ -44,8 +42,8 @@
                             <li><a href="<%=Utils.AbsoluteWebRoot %>"><%=Resources.labels.home %></a></li>
                             <li><a href="<%=Utils.AbsoluteWebRoot %>archive<%= BlogEngine.Core.BlogConfig.FileExtension %>"><%=Resources.labels.archive %></a></li>
                             <li><a href="<%=Utils.AbsoluteWebRoot %>contact<%= BlogEngine.Core.BlogConfig.FileExtension %>"><%=Resources.labels.contact %></a></li>
-                            <li><a href="<%=Utils.AbsoluteWebRoot %>catalogo<%= BlogEngine.Core.BlogConfig.FileExtension %>"><%=Resources.labels.catalogo %></a></li>
-                            <li><a href="<%=Utils.AbsoluteWebRoot %>office365<%= BlogEngine.Core.BlogConfig.FileExtension %>"><%=Resources.labels.office355 %></a></li>
+                            <li><a href="<%=Utils.AbsoluteWebRoot %>catalogo.aspx"><%=Resources.labels.catalogo %></a></li>
+                            <li><a href="<%=Utils.AbsoluteWebRoot %>office365.aspx"><%=Resources.labels.office355 %></a></li>
                             <%foreach (BlogEngine.Core.Page parentPage in BlogEngine.Core.Page.Pages.Where(p => !p.HasParentPage && p.IsPublished && p.ShowInList).OrderBy(p => p.SortOrder))
                               { %>
                             <li class="page-menu clearfix">
@@ -76,7 +74,7 @@
             </div>
             <div class="title-wrapper">
                 <div class="container">
-                    <img src="<%=Utils.AbsoluteWebRoot %>[CUSTOMFIELD|THEME|Standard|Logo Address|Custom/Themes/Standard/images/logo.png/]" class="pull-left logo" alt="<%=BlogSettings.Instance.Name %>" />
+                    <img src="~/Custom/Themes/Standard/images/logo1.png" runat="server" class="pull-left logo" alt="<%=BlogSettings.Instance.Name %>" />
                     <hgroup class="pull-left">
                         <h1><a href="<%=Utils.AbsoluteWebRoot %>"><%=BlogSettings.Instance.Name %></a></h1>
                         <h3><%=BlogSettings.Instance.Description %></h3>
