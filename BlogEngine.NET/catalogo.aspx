@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="catalogo" EnableViewState="false" Codebehid="catalogo.aspx.cs"%>
+﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="catalogo" EnableViewState="false" Codefile="catalogo.aspx.cs"%>
 <%@ Import Namespace="BlogEngine.Core" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphBody" Runat="Server">

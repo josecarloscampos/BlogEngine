@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 // Nombre de archivo original:
-// Fecha de generación: 20/12/2015 12:31:38 p. m.
+// Fecha de generación: 21/12/2015 10:30:55 a. m.
 namespace BlogEngine.Core.GalleryServer
 {
     
