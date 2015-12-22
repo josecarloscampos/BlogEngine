@@ -332,6 +332,8 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\toastr.scss" />
     <Content Include="Content\toastr.less" />
+    <None Include="Properties\PublishProfiles\betaestudiantes - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\betaestudiantes.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -2812,7 +2814,6 @@
     <Folder Include="App_Data\datastore\extensions\" />
     <Folder Include="App_Data\files\avatars\" />
     <Folder Include="App_Data\packages\SimpleBlog.1.1.0\" />
-    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

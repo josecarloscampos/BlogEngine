@@ -8,9 +8,9 @@
         <div><%= Resources.labels.commentNotificationUnsubscriptionText %></div>
     </div>
   </asp:PlaceHolder>
-
+        
   <asp:placeholder runat="server" id="phPostNavigation" visible="false" />
- 
+    
   <asp:placeholder runat="server" id="pwPost" />
 
   <asp:placeholder runat="server" id="phRelatedPosts" />
@@ -38,8 +38,8 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
     </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=<%=BlogEngine.Core.BlogSettings.Instance.DisqusWebsiteName %>">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+<%--    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=<%=BlogEngine.Core.BlogSettings.Instance.DisqusWebsiteName %>">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>--%>
   </div>
   
 </asp:content>
