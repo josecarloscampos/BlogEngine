@@ -332,6 +332,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\toastr.scss" />
     <Content Include="Content\toastr.less" />
+    <None Include="Properties\PublishProfiles\beta2.pubxml" />
     <None Include="Properties\PublishProfiles\betaestudiantes - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\betaestudiantes.pubxml" />
     <None Include="Properties\Settings.settings">

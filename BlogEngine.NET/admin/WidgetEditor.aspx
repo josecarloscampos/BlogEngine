@@ -61,12 +61,12 @@
     <div id="title">
         <label for="<%=txtTitle.ClientID %>">
             <%=Resources.labels.title %></label>&nbsp;&nbsp;&nbsp;
-        <asp:TextBox runat="server" ID="txtTitle" Width="300px" />
-        <asp:CheckBox runat="Server" ID="cbShowTitle" Text="<%$Resources:labels, showTitle %>" />
+        <asp:TextBox runat="server" ID="txtTitle" Width="250px" />
+        <asp:CheckBox runat="Server" ID="cbShowTitle" Text="Mostrar Titulo" />
     </div>
     <div runat="server" id="phEdit" />
     <div id="bottom">
-        <asp:Button runat="server" ID="btnSave" Text="Save" />
+        <asp:Button runat="server" ID="btnSave" Text="Guardar" />
         <input type="button" value="<%=Resources.labels.cancel %>" onclick="parent.BlogEngine.widgetAdmin.closeEditor()" />
     </div>
     </form>

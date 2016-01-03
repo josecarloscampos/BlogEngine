@@ -1267,7 +1267,7 @@
     <value>Mostrar selector</value>
   </data>
   <data name="slug" xml:space="preserve">
-    <value>Slug (opcional)</value>
+    <value>Título (opcional)</value>
   </data>
   <data name="specifyPingService" xml:space="preserve">
     <value>Por favor especifique un servicio de ping</value>
@@ -1753,5 +1753,191 @@
   </data>
   <data name="phoneMain" xml:space="preserve">
     <value>Teléfono</value>
+  </data>
+  <data name="addFolder" xml:space="preserve">
+    <value>Agregar carpeta</value>
+  </data>
+  <data name="backcolor" xml:space="preserve">
+    <value>Color de fondo</value>
+  </data>
+  <data name="categoryAdded" xml:space="preserve">
+    <value>Categoria Agregada</value>
+  </data>
+  <data name="checkPermissions" xml:space="preserve">
+    <value>Verificar permisos</value>
+  </data>
+  <data name="completed" xml:space="preserve">
+    <value>Completado</value>
+  </data>
+  <data name="content" xml:space="preserve">
+    <value>Contenido</value>
+  </data>
+  <data name="count" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="createdOn" xml:space="preserve">
+    <value>Creado</value>
+  </data>
+  <data name="customFields" xml:space="preserve">
+    <value>Campos personalizados</value>
+  </data>
+  <data name="datePublished" xml:space="preserve">
+    <value>Fecha de publicación</value>
+  </data>
+  <data name="deleteAll" xml:space="preserve">
+    <value>Eliminar todo</value>
+  </data>
+  <data name="doDelete" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="empty" xml:space="preserve">
+    <value>Vacio</value>
+  </data>
+  <data name="enterEmail" xml:space="preserve">
+    <value>Ingresar correo electrónico</value>
+  </data>
+  <data name="examplePage" xml:space="preserve">
+    <value>Pagina de ejemplo</value>
+  </data>
+  <data name="fileManager" xml:space="preserve">
+    <value>Administrador de archivos</value>
+  </data>
+  <data name="filePicker" xml:space="preserve">
+    <value>Selector de archivo</value>
+  </data>
+  <data name="fontSize" xml:space="preserve">
+    <value>Tamaño de fuente</value>
+  </data>
+  <data name="forecolor" xml:space="preserve">
+    <value>Color primario</value>
+  </data>
+  <data name="heading" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="isForSiteAggregation" xml:space="preserve">
+    <value>Agregacion al sitio</value>
+  </data>
+  <data name="Key" xml:space="preserve">
+    <value>Clave</value>
+  </data>
+  <data name="latestComments" xml:space="preserve">
+    <value>Últimos comentarios</value>
+  </data>
+  <data name="loggedMessages" xml:space="preserve">
+    <value>Últimos registros</value>
+  </data>
+  <data name="loginFailed" xml:space="preserve">
+    <value>Error de inicio de sesion</value>
+  </data>
+  <data name="logs" xml:space="preserve">
+    <value>Registros</value>
+  </data>
+  <data name="next" xml:space="preserve">
+    <value>Siguiente</value>
+  </data>
+  <data name="notifyMe" xml:space="preserve">
+    <value>Notificarme</value>
+  </data>
+  <data name="pageAdded" xml:space="preserve">
+    <value>Página agregada</value>
+  </data>
+  <data name="pageMeta" xml:space="preserve">
+    <value>Meta de la Pagina</value>
+  </data>
+  <data name="pageSource" xml:space="preserve">
+    <value>Fuente de la página</value>
+  </data>
+  <data name="pageUpdated" xml:space="preserve">
+    <value>Página Actualizada</value>
+  </data>
+  <data name="permissions" xml:space="preserve">
+    <value>Permisos</value>
+  </data>
+  <data name="personalDetails" xml:space="preserve">
+    <value>Detalles Personales</value>
+  </data>
+  <data name="picture" xml:space="preserve">
+    <value>Imagen</value>
+  </data>
+  <data name="postAdded" xml:space="preserve">
+    <value>Publicacion agregada</value>
+  </data>
+  <data name="prev" xml:space="preserve">
+    <value>Anterior</value>
+  </data>
+  <data name="primary" xml:space="preserve">
+    <value>Primario</value>
+  </data>
+  <data name="publishedOn" xml:space="preserve">
+    <value>Publicado en</value>
+  </data>
+  <data name="publishedPages" xml:space="preserve">
+    <value>Páginas publicadas</value>
+  </data>
+  <data name="publishedPosts" xml:space="preserve">
+    <value>Post publicados</value>
+  </data>
+  <data name="puergeAll" xml:space="preserve">
+    <value>Limpiar todo</value>
+  </data>
+  <data name="purge" xml:space="preserve">
+    <value>Limpiar</value>
+  </data>
+  <data name="purged" xml:space="preserve">
+    <value>Limpiado</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Recargar</value>
+  </data>
+  <data name="size" xml:space="preserve">
+    <value>Tamaño</value>
+  </data>
+  <data name="sort" xml:space="preserve">
+    <value>Clasificación</value>
+  </data>
+  <data name="sortOrder" xml:space="preserve">
+    <value>Orden de clasificación</value>
+  </data>
+  <data name="spamComments" xml:space="preserve">
+    <value>Comentarios spam</value>
+  </data>
+  <data name="systemRole" xml:space="preserve">
+    <value>Rol en el sistema</value>
+  </data>
+  <data name="tools" xml:space="preserve">
+    <value>Herramientas</value>
+  </data>
+  <data name="unapprove" xml:space="preserve">
+    <value>Desaprobar</value>
+  </data>
+  <data name="unpublish" xml:space="preserve">
+    <value>Despublicar</value>
+  </data>
+  <data name="unpublished" xml:space="preserve">
+    <value>No publicados</value>
+  </data>
+  <data name="userAdded" xml:space="preserve">
+    <value>Usuario agregado</value>
+  </data>
+  <data name="viewLargeCalendar" xml:space="preserve">
+    <value>Ver publicaciones en calendario completo</value>
+  </data>
+  <data name="viewMyBlog" xml:space="preserve">
+    <value>Ver mi blog</value>
+  </data>
+  <data name="install" xml:space="preserve">
+    <value>Instalar</value>
+  </data>
+  <data name="logFile" xml:space="preserve">
+    <value>Archivo de registro</value>
+  </data>
+  <data name="purgeAll" xml:space="preserve">
+    <value>LIMPIAR TODO</value>
+  </data>
+  <data name="reviews" xml:space="preserve">
+    <value>Opiniones</value>
+  </data>
+  <data name="writeReview" xml:space="preserve">
+    <value>Escribir revision</value>
   </data>
 </root>

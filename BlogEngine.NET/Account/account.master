@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head id="Head1" runat="server">
-    <title>Account Login</title>
+    <title>Iniciar sesión</title>
     <meta name="description" content="Account Login Membership User Password" />
     <link href="../Content/bootstrap.min.css" rel="stylesheet" />
     <link href="account.css" rel="stylesheet" />
@@ -21,8 +21,8 @@
     <form id="Form1" runat="server">
         <div class="container">
             <div class="account-header clearfix">
-                <a href="http://dotnetblogengine.net/" class="pull-left logo" target="_blank">
-                    <img alt="BlogEngine.NET" src="../Content/images/logo.png" /></a>
+                <a href="http://estudiantesunedcr.net" class="pull-left logo" target="_blank">
+                    <img alt="Estudiantes UNED" src="../Custom/Themes/Standard/images/logo2.png" /></a>
                 <a href="<%= Utils.RelativeWebRoot %>" class="pull-right returnblog text-muted"><%=Resources.labels.returnToBlog %></a>
             </div>
             <div id="StatusBox">

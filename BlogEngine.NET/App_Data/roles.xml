@@ -3,13 +3,15 @@
   <role>
     <name>Administrators</name>
     <users>
-      <user>Admin</user>
       <user>Brayan</user>
+      <user>Admin</user>
     </users>
   </role>
   <role>
     <name>Editors</name>
-    <users />
+    <users>
+      <user>Admin</user>
+    </users>
   </role>
   <role>
     <name>Anonymous</name>
@@ -17,6 +19,17 @@
   </role>
   <role>
     <name>estudiante</name>
-    <users />
+    <users>
+      <user>Admin</user>
+      <user>Viviana Salazar</user>
+      <user>Alexandra Toruño Reyes</user>
+      <user>Carolina</user>
+      <user>andahe_3@hotmail.com</user>
+      <user>ygdiaz</user>
+      <user>Jaskari</user>
+      <user>Mariela</user>
+      <user>Ari</user>
+      <user>Rolando Mora</user>
+    </users>
   </role>
 </roles>

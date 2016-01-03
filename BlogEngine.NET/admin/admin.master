@@ -2,7 +2,7 @@
 <%@ Import Namespace="BlogEngine.Core" %>
 <html>
 <head id="Head1" runat="server">
-    <title>BlogEngine.NET Admin</title>
+    <title>Estudiantes UNED Admin</title>
     <link href="~/Content/bootstrap/bootstrap.css" rel="stylesheet"/>
     <link href="~/Content/bootstrap/bootstrap-theme.css" rel="stylesheet"/>
     <style>

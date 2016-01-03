@@ -2544,4 +2544,7 @@
   <data name="txtErrorTitle" xml:space="preserve">
     <value>Titolo per la Pagina di Errore</value>
   </data>
+  <data name="userNewsletter" xml:space="preserve">
+    <value>Iscritti</value>
+  </data>
 </root>

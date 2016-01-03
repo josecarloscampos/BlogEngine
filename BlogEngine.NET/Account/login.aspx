@@ -12,7 +12,7 @@
             </div>
             <div class="account-content">
                 <div class="form-group">
-                    <asp:TextBox ID="UserName" runat="server" AutoCompleteType="None" placeholder="username" CssClass="form-control input-lg textEntry ltr-dir"></asp:TextBox>
+                    <asp:TextBox ID="UserName" runat="server" AutoCompleteType="None" placeholder="Nombre de Usuario" CssClass="form-control input-lg textEntry ltr-dir"></asp:TextBox>
                 </div>
                 <div class="form-group">
                     <asp:TextBox ID="Password" runat="server" placeholder="*******" CssClass="form-control input-lg passwordEntry  ltr-dir" TextMode="Password"></asp:TextBox>

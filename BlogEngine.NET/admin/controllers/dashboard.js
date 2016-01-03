@@ -1,4 +1,4 @@
-﻿angular.module('blogAdmin').controller('DashboardController', ["$rootScope", "$scope", "$location", "$log", "dataService", function ($rootScope, $scope, $location, $log, dataService) {
+﻿angular.module('blogAdmin').controller('DashboardController', ["$rootScope", "$scope", "$location", "$log", "$filter", "dataService", function ($rootScope, $scope, $location, $log, $filter, dataService) {
     $scope.stats = {};
     $scope.draftposts = [];
     $scope.draftpages = [];
@@ -8,6 +8,10 @@
     $scope.logItems = [];
     $scope.itemToPurge = {};
     $scope.security = $rootScope.security;
+    $scope.pager = {};
+    $scope.pager.items = [];
+    $scope.pagerCurrentPage = 0;
+    $scope.focusInput = false;
 
     $scope.openLogFile = function () {
         dataService.getItems('/api/logs/getlog/file')
@@ -110,6 +114,16 @@
             .error(function (data) { toastr.error($rootScope.lbl.errorGettingLogFile); });
 
         $scope.loadTrash();
+        $scope.loadNotes();
+    }
+
+    $scope.loadNotes = function () {
+        dataService.getItems('/api/quicknotes', { type: 0, take: 5, skip: 0 })
+            .success(function (data) {
+                angular.copy(data, $scope.pager.items);
+                listPagerInit($scope.pager);
+            })
+            .error(function () { toastr.error($rootScope.lbl.errorLoadingTrash); });
     }
 
     $scope.loadPackages = function () {
@@ -154,4 +168,87 @@
     }
 
     $scope.load();
+
+    $scope.noteId = '';
+    $scope.notePage = 1;
+    $scope.addNote = function () {
+        $scope.noteId = '';
+        $("#txtAddNote").val('');
+        $("#modal-add-note").modal();
+        $scope.focusInput = true;
+    }
+    $scope.editNote = function (id) {
+        $scope.noteId = id;
+        var note = findInArray($scope.pager.items, 'Id', id);
+        $("#txtEditNote").val(note.Note);
+        $("#modal-edit-note").modal();
+        $scope.focusInput = true;
+    }
+    $scope.deleteNote = function (id) {
+        var note = { 'Id': id };
+        dataService.deleteItem("/api/quicknotes/", note)
+        .success(function (data) {
+            toastr.success($rootScope.lbl.completed);
+            $scope.load();
+            $("#modal-edit-note").modal('hide');
+        })
+        .error(function () {
+            toastr.error($rootScope.lbl.failed);
+            $("#modal-edit-note").modal('hide');
+        });
+    }
+    saveNote = function () {
+        if ($scope.noteId === '') {
+            $scope.addNewNote();
+        }
+        else {
+            $scope.updateNote();
+        }
+        $scope.focusInput = false;
+    }
+    $scope.addNewNote = function () {
+        if ($("#txtAddNote").val().length < 1) {
+            toastr.error($rootScope.lbl.isRequiredField);
+            return false;
+        }
+        var note = { 'Id': '', 'Note': $("#txtAddNote").val() };
+        dataService.addItem("/api/quicknotes/add", note)
+        .success(function (data) {
+            toastr.success($rootScope.lbl.completed);
+            $scope.load();
+            $("#modal-add-note").modal('hide');
+        })
+        .error(function () {
+            toastr.error($rootScope.lbl.failed);
+            $("#modal-add-note").modal('hide');
+        });
+    }
+    $scope.updateNote = function () {
+        if ($("#txtEditNote").val().length < 1) {
+            toastr.error($rootScope.lbl.isRequiredField);
+            return false;
+        }
+        var note = { 'Id': $scope.noteId, 'Note': $("#txtEditNote").val() };
+        dataService.updateItem("/api/quicknotes/" + $scope.noteId, note)
+        .success(function (data) {
+            toastr.success($rootScope.lbl.completed);
+            $scope.load();
+            $("#modal-edit-note").modal('hide');
+        })
+        .error(function () {
+            toastr.error($rootScope.lbl.failed);
+            $("#modal-edit-note").modal('hide');
+        });
+    }
+    $scope.notePrevPage = function () {
+        if ($scope.notePage > 1) {
+            $scope.notePage--;
+        }
+        alert($scope.notePage);
+    }
+    $scope.noteNextPage = function () {
+        $scope.notePage++;
+        alert($scope.notePage);
+    }
+
 }]);

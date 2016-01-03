@@ -24,7 +24,6 @@ namespace App_Code.Controls
     using System.Web.Caching;
     using System.Web.UI;
     using System.Web.UI.WebControls;
-
     using BlogEngine.Core;
     using BlogEngine.Core.Web.Extensions;
 

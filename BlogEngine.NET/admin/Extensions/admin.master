@@ -4,7 +4,7 @@
 <%@ Import Namespace="System.Web.Optimization" %>
 <html>
 <head id="Head1" runat="server">
-    <title>BlogEngine.NET Admin</title>
+    <title>Estudiantes UNED Admin</title>
     <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>

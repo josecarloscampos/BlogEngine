@@ -5,7 +5,7 @@
     <h2 class="page-global-title"><%=BlogEngine.Core.BlogSettings.Instance.ErrorTitle %></h2>
         <%=BlogEngine.Core.BlogSettings.Instance.ErrorText %>
         <div id="divErrorDetails" runat="server" visible="false">
-        <h2>Error Details:</h2>
+        <h2>Detalles del Error:</h2>
         <p id="pDetails" runat="server"></p>
     </div>
     

@@ -16,7 +16,7 @@
     <br />
     <div class="account-content">
         <div class="form-group">
-            <asp:TextBox ID="txtUser" runat="server" placeholder="User name" AutoCompleteType="None" CssClass="textEntry form-control "></asp:TextBox>
+            <asp:TextBox ID="txtUser" runat="server" placeholder="Nombre de Usuario" AutoCompleteType="None" CssClass="textEntry form-control "></asp:TextBox>
         </div>
         <div class="btn-wrapper text-right">
             <a href="<%= Utils.RelativeWebRoot %>Account/login.aspx" class="btn btn-default"><%=Resources.labels.cancel %></a>

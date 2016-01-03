@@ -1,6 +1,6 @@
 ﻿angular.module('blogAdmin').controller('ProfileController', ["$rootScope", "$scope", "$filter", "dataService", function ($rootScope, $scope, $filter, dataService) {
     $scope.user = {};
-    $scope.noAvatar = SiteVars.ApplicationRelativeWebRoot + "pics/noavatar.jpg";
+    $scope.noAvatar = SiteVars.ApplicationRelativeWebRoot + "Content/images/blog/noavatar.jpg";
     $scope.photo = $scope.noAvatar;
     $scope.UserVars = UserVars;
 
